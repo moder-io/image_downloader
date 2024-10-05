@@ -9,7 +9,7 @@ def main():
     create_folder(folder_name)
     
     print(f"Buscando {max_images} imágenes de '{search_term}'...")
-    image_urls = scrape_images(search_term, max_images)
+    image_urls = scrape_images(search_term, max_images+1)
     
     print(f"Se encontraron {len(image_urls)} imágenes. Comenzando la descarga...")
     download_images(image_urls, folder_name, search_term)
@@ -18,4 +18,4 @@ def main():
     print(f"Total de imágenes descargadas: {len(image_urls)}")
 
 if __name__ == "__main__":
-    main()
+    main() 
