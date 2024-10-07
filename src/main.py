@@ -1,6 +1,6 @@
-from scraper import scrape_images
-from downloader import download_images
-from utils import create_folder
+from scraper import *
+from downloader import *
+from utils import *
 
 def main():
     search_term = input("Ingresa las palabras clave para buscar imágenes: ")
@@ -18,4 +18,4 @@ def main():
     print(f"Total de imágenes descargadas: {len(image_urls)}")
 
 if __name__ == "__main__":
-    main() 
+    main()
