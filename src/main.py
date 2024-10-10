@@ -25,7 +25,6 @@ def main():
     
     print(f"\n¡Descarga completa! Las imágenes están guardadas en la carpeta: {folder_name}")
 
-    # Pregunta si se desea comprimir las imágenes descargadas
     respuesta = input("¿Quieres comprimir las imágenes? (escribe 'y' para aceptar): ")
     if respuesta.lower() == 'y':
         compress_folder(folder_name, folder_name)
