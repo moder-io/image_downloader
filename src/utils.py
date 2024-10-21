@@ -15,3 +15,12 @@ def compress_folder(folder_name, output_zip):
         print(f"Carpeta '{folder_name}' comprimida como '{output_zip}.zip'.")
     else:
         print(f"Carpeta '{folder_name}' no existe.")
+
+def list_images(folder_name):
+    """Lista las imágenes en la carpeta especificada."""
+    if os.path.exists(folder_name):
+        image_files = [f for f in os.listdir(folder_name) if f.endswith(('.jpg', '.png', '.gif', '.bmp'))]
+        for image_file in image_files:
+            print(image_file)
+    else:
+        print(f"La carpeta '{folder_name}' no existe.")
